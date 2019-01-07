@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5D1E03DF8384897C7C8BA09 /* libPods-HiChat-HiChatKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A035FD59352D7D090DB973 /* libPods-HiChat-HiChatKit.a */; };
+		EB18E21721E3850100196039 /* HiChatKitSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18E21621E3850100196039 /* HiChatKitSwiftTest.swift */; };
 		EBB79A2321DF2D4200EBCB99 /* HiChatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A2221DF2D4200EBCB99 /* HiChatKit.m */; };
 		EBB79A2421DF2D4200EBCB99 /* HiChatKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB79A2121DF2D4200EBCB99 /* HiChatKit.h */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		89A035FD59352D7D090DB973 /* libPods-HiChat-HiChatKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiChat-HiChatKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87BE65CE88C25B717B1B6D4 /* Pods-HiChat-HiChatKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat-HiChatKit.release.xcconfig"; path = "../HiChat/Pods/Target Support Files/Pods-HiChat-HiChatKit/Pods-HiChat-HiChatKit.release.xcconfig"; sourceTree = "<group>"; };
+		EB18E21521E3850000196039 /* HiChatKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiChatKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB18E21621E3850100196039 /* HiChatKitSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatKitSwiftTest.swift; sourceTree = "<group>"; };
 		EBB79A1E21DF2D4200EBCB99 /* libHiChatKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHiChatKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB79A2121DF2D4200EBCB99 /* HiChatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiChatKit.h; sourceTree = "<group>"; };
 		EBB79A2221DF2D4200EBCB99 /* HiChatKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiChatKit.m; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 			children = (
 				EBB79A2121DF2D4200EBCB99 /* HiChatKit.h */,
 				EBB79A2221DF2D4200EBCB99 /* HiChatKit.m */,
+				EB18E21621E3850100196039 /* HiChatKitSwiftTest.swift */,
+				EB18E21521E3850000196039 /* HiChatKit-Bridging-Header.h */,
 			);
 			path = HiChatKit;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				TargetAttributes = {
 					EBB79A1D21DF2D4200EBCB99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -151,12 +157,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../HiChat/Pods/Target Support Files/Pods-HiChat-HiChatKit/Pods-HiChat-HiChatKit-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BQMM/BQMM/BQMM.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BQMM.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
@@ -192,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB79A2321DF2D4200EBCB99 /* HiChatKit.m in Sources */,
+				EB18E21721E3850100196039 /* HiChatKitSwiftTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +327,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE674CBFEA812F165EFAC835 /* Pods-HiChat-HiChatKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HiChatKit/HiChatKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -327,11 +349,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C87BE65CE88C25B717B1B6D4 /* Pods-HiChat-HiChatKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HiChatKit/HiChatKit-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

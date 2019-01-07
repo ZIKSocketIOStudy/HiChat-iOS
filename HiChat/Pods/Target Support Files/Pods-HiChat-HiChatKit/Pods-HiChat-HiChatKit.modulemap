@@ -1,0 +1,6 @@
+module Pods_HiChat_HiChatKit {
+  umbrella header "Pods-HiChat-HiChatKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

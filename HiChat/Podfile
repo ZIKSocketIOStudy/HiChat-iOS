@@ -7,6 +7,7 @@ workspace 'HiChat.xcworkspace'
 
 
 target 'HiChat' do
+    pod 'Socket.IO-Client-Swift'
     pod 'SDWebImage'
     pod 'Toast'
     pod 'SVProgressHUD'
@@ -20,6 +21,14 @@ target 'HiChat' do
     #pod 'SDCycleScrollView'
     pod 'MBProgressHUD'
     pod 'YYKit'
+    #表情云
+    pod 'BQMM'
+    #键盘
+    pod 'IQKeyboardManager'
+    #高德地图相关SDK（无IDFA版）
+    pod 'AMapLocation-NO-IDFA'
+    pod 'AMapSearch-NO-IDFA'
+    pod 'AMap2DMap-NO-IDFA'
 
     target 'HiChat' do
         project 'HiChat.xcodeproj'

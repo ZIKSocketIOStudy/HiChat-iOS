@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A786F571CB7F89B01105B70 /* libPods-HiChat-HiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBF6E97DA4874FFF551A6CB /* libPods-HiChat-HiChat.a */; };
 		C4579514B9734967324E4B2D /* libPods-HiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CC3961A9A9F57667077D88 /* libPods-HiChat.a */; };
+		EB18E21A21E3851400196039 /* HiChatSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18E21921E3851400196039 /* HiChatSwiftTest.swift */; };
 		EBB79A0121DF2C7900EBCB99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A0021DF2C7900EBCB99 /* AppDelegate.m */; };
 		EBB79A0421DF2C7900EBCB99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A0321DF2C7900EBCB99 /* ViewController.m */; };
 		EBB79A0721DF2C7900EBCB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB79A0521DF2C7900EBCB99 /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		BF5ADA65FCD8137D74018CB2 /* Pods-HiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat/Pods-HiChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D62B47317D60FD5AFF61D23E /* Pods-HiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat/Pods-HiChat.release.xcconfig"; sourceTree = "<group>"; };
 		DBE55E059A3A2F102A4FB682 /* Pods-HiChat-HiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat-HiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat.debug.xcconfig"; sourceTree = "<group>"; };
+		EB18E21821E3851400196039 /* HiChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB18E21921E3851400196039 /* HiChatSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatSwiftTest.swift; sourceTree = "<group>"; };
 		EB421CDE21E21DF300648F0D /* HiChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiChat-Prefix.pch"; sourceTree = "<group>"; };
 		EBB799FC21DF2C7900EBCB99 /* HiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB799FF21DF2C7900EBCB99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				EBB79A0D21DF2C7C00EBCB99 /* Info.plist */,
 				EBB79A0E21DF2C7C00EBCB99 /* main.m */,
 				EB421CDE21E21DF300648F0D /* HiChat-Prefix.pch */,
+				EB18E21921E3851400196039 /* HiChatSwiftTest.swift */,
+				EB18E21821E3851400196039 /* HiChat-Bridging-Header.h */,
 			);
 			path = HiChat;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				TargetAttributes = {
 					EBB799FB21DF2C7900EBCB99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -180,12 +186,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BQMM/BQMM/BQMM.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BQMM.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
@@ -222,6 +234,7 @@
 			files = (
 				EBB79A0421DF2C7900EBCB99 /* ViewController.m in Sources */,
 				EBB79A0F21DF2C7C00EBCB99 /* main.m in Sources */,
+				EB18E21A21E3851400196039 /* HiChatSwiftTest.swift in Sources */,
 				EBB79A0121DF2C7900EBCB99 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +317,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -356,6 +370,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -365,6 +380,7 @@
 			baseConfigurationReference = DBE55E059A3A2F102A4FB682 /* Pods-HiChat-HiChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -383,6 +399,9 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.vipapp.www.HiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiChat/HiChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -392,6 +411,7 @@
 			baseConfigurationReference = B8AA395A546BA094AF2AE2DE /* Pods-HiChat-HiChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -410,6 +430,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.vipapp.www.HiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiChat/HiChat-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
