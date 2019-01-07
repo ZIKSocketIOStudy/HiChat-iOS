@@ -1,0 +1,39 @@
+platform :ios, '10.0'
+
+# 忽略引入库的所有警告（强迫症者的福音啊）
+inhibit_all_warnings!
+
+workspace 'HiChat.xcworkspace'
+
+
+target 'HiChat' do
+    pod 'SDWebImage'
+    pod 'Toast'
+    pod 'SVProgressHUD'
+    pod 'M80AttributedLabel'
+    pod 'TZImagePickerController'
+    pod 'FMDB'
+    pod 'AFNetworking'
+    pod 'Masonry'
+    pod 'MJRefresh'
+
+    #pod 'SDCycleScrollView'
+    pod 'MBProgressHUD'
+    pod 'YYKit'
+
+    target 'HiChat' do
+        project 'HiChat.xcodeproj'
+        pod 'FMDB'
+        pod 'Reachability'
+        pod 'CocoaLumberjack'
+        pod 'SSZipArchive'
+        pod 'SVProgressHUD'
+        pod 'Fabric'
+        pod 'Crashlytics'
+    end
+    
+    target 'HiChatKit' do
+        project '../HiChatKit/HiChatKit.xcodeproj'
+    end
+end
+

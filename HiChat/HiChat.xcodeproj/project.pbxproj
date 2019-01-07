@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A786F571CB7F89B01105B70 /* libPods-HiChat-HiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBF6E97DA4874FFF551A6CB /* libPods-HiChat-HiChat.a */; };
+		C4579514B9734967324E4B2D /* libPods-HiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CC3961A9A9F57667077D88 /* libPods-HiChat.a */; };
 		EBB79A0121DF2C7900EBCB99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A0021DF2C7900EBCB99 /* AppDelegate.m */; };
 		EBB79A0421DF2C7900EBCB99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A0321DF2C7900EBCB99 /* ViewController.m */; };
 		EBB79A0721DF2C7900EBCB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB79A0521DF2C7900EBCB99 /* Main.storyboard */; };
@@ -16,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23CC3961A9A9F57667077D88 /* libPods-HiChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AA395A546BA094AF2AE2DE /* Pods-HiChat-HiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat-HiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat.release.xcconfig"; sourceTree = "<group>"; };
+		BF5ADA65FCD8137D74018CB2 /* Pods-HiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat/Pods-HiChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D62B47317D60FD5AFF61D23E /* Pods-HiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat/Pods-HiChat.release.xcconfig"; sourceTree = "<group>"; };
+		DBE55E059A3A2F102A4FB682 /* Pods-HiChat-HiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat-HiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat.debug.xcconfig"; sourceTree = "<group>"; };
+		EB421CDE21E21DF300648F0D /* HiChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiChat-Prefix.pch"; sourceTree = "<group>"; };
 		EBB799FC21DF2C7900EBCB99 /* HiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB799FF21DF2C7900EBCB99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBB79A0021DF2C7900EBCB99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +34,7 @@
 		EBB79A0B21DF2C7C00EBCB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB79A0D21DF2C7C00EBCB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB79A0E21DF2C7C00EBCB99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECBF6E97DA4874FFF551A6CB /* libPods-HiChat-HiChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiChat-HiChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4579514B9734967324E4B2D /* libPods-HiChat.a in Frameworks */,
+				6A786F571CB7F89B01105B70 /* libPods-HiChat-HiChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		546CEDF5082608B8C5AF7D00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23CC3961A9A9F57667077D88 /* libPods-HiChat.a */,
+				ECBF6E97DA4874FFF551A6CB /* libPods-HiChat-HiChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AB4D05A02BF14E5552762C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF5ADA65FCD8137D74018CB2 /* Pods-HiChat.debug.xcconfig */,
+				D62B47317D60FD5AFF61D23E /* Pods-HiChat.release.xcconfig */,
+				DBE55E059A3A2F102A4FB682 /* Pods-HiChat-HiChat.debug.xcconfig */,
+				B8AA395A546BA094AF2AE2DE /* Pods-HiChat-HiChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EBB799F321DF2C7900EBCB99 = {
 			isa = PBXGroup;
 			children = (
 				EBB799FE21DF2C7900EBCB99 /* HiChat */,
 				EBB799FD21DF2C7900EBCB99 /* Products */,
+				6AB4D05A02BF14E5552762C8 /* Pods */,
+				546CEDF5082608B8C5AF7D00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +100,7 @@
 				EBB79A0A21DF2C7C00EBCB99 /* LaunchScreen.storyboard */,
 				EBB79A0D21DF2C7C00EBCB99 /* Info.plist */,
 				EBB79A0E21DF2C7C00EBCB99 /* main.m */,
+				EB421CDE21E21DF300648F0D /* HiChat-Prefix.pch */,
 			);
 			path = HiChat;
 			sourceTree = "<group>";
@@ -78,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBB79A1221DF2C7C00EBCB99 /* Build configuration list for PBXNativeTarget "HiChat" */;
 			buildPhases = (
+				C2178CCEB3441F452CFED800 /* [CP] Check Pods Manifest.lock */,
 				EBB799F821DF2C7900EBCB99 /* Sources */,
 				EBB799F921DF2C7900EBCB99 /* Frameworks */,
 				EBB799FA21DF2C7900EBCB99 /* Resources */,
+				7E89061DEB3FDFAE6C4A1FF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +171,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E89061DEB3FDFAE6C4A1FF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2178CCEB3441F452CFED800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiChat-HiChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBB799F821DF2C7900EBCB99 /* Sources */ = {
@@ -220,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,15 +362,25 @@
 		};
 		EBB79A1321DF2C7C00EBCB99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE55E059A3A2F102A4FB682 /* Pods-HiChat-HiChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HiChat/HiChat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../HiChatKit/HiChatKit",
+				);
 				INFOPLIST_FILE = HiChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.vipapp.www.HiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,15 +389,25 @@
 		};
 		EBB79A1421DF2C7C00EBCB99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8AA395A546BA094AF2AE2DE /* Pods-HiChat-HiChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HiChat/HiChat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../HiChatKit/HiChatKit",
+				);
 				INFOPLIST_FILE = HiChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.vipapp.www.HiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
