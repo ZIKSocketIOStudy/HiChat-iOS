@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		6A786F571CB7F89B01105B70 /* libPods-HiChat-HiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBF6E97DA4874FFF551A6CB /* libPods-HiChat-HiChat.a */; };
 		C4579514B9734967324E4B2D /* libPods-HiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CC3961A9A9F57667077D88 /* libPods-HiChat.a */; };
+		EB09B1C021E99809001F4064 /* ZIMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09B1BE21E99809001F4064 /* ZIMLoginViewController.m */; };
+		EB09B1C121E99809001F4064 /* ZIMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB09B1BF21E99809001F4064 /* ZIMLoginViewController.xib */; };
 		EB18E21A21E3851400196039 /* HiChatSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18E21921E3851400196039 /* HiChatSwiftTest.swift */; };
+		EB86AD9A21E9C51C005028C7 /* ZIMSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB86AD9321E9C51C005028C7 /* ZIMSocketManager.m */; };
+		EB86AD9B21E9C51C005028C7 /* ZIMLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB86AD9621E9C51C005028C7 /* ZIMLoginManager.m */; };
+		EB86AD9F21E9C871005028C7 /* ZIMSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = EB86AD9E21E9C870005028C7 /* ZIMSDK.m */; };
 		EBB79A0121DF2C7900EBCB99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A0021DF2C7900EBCB99 /* AppDelegate.m */; };
 		EBB79A0421DF2C7900EBCB99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB79A0321DF2C7900EBCB99 /* ViewController.m */; };
 		EBB79A0721DF2C7900EBCB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB79A0521DF2C7900EBCB99 /* Main.storyboard */; };
@@ -24,9 +29,21 @@
 		BF5ADA65FCD8137D74018CB2 /* Pods-HiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat/Pods-HiChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D62B47317D60FD5AFF61D23E /* Pods-HiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat/Pods-HiChat.release.xcconfig"; sourceTree = "<group>"; };
 		DBE55E059A3A2F102A4FB682 /* Pods-HiChat-HiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiChat-HiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiChat-HiChat/Pods-HiChat-HiChat.debug.xcconfig"; sourceTree = "<group>"; };
+		EB09B1BD21E99809001F4064 /* ZIMLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIMLoginViewController.h; sourceTree = "<group>"; };
+		EB09B1BE21E99809001F4064 /* ZIMLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIMLoginViewController.m; sourceTree = "<group>"; };
+		EB09B1BF21E99809001F4064 /* ZIMLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZIMLoginViewController.xib; sourceTree = "<group>"; };
 		EB18E21821E3851400196039 /* HiChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB18E21921E3851400196039 /* HiChatSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatSwiftTest.swift; sourceTree = "<group>"; };
 		EB421CDE21E21DF300648F0D /* HiChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiChat-Prefix.pch"; sourceTree = "<group>"; };
+		EB86AD9321E9C51C005028C7 /* ZIMSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSocketManager.m; sourceTree = "<group>"; };
+		EB86AD9421E9C51C005028C7 /* ZIMLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMLoginManager.h; sourceTree = "<group>"; };
+		EB86AD9521E9C51C005028C7 /* ZIMSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSocketManager.h; sourceTree = "<group>"; };
+		EB86AD9621E9C51C005028C7 /* ZIMLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMLoginManager.m; sourceTree = "<group>"; };
+		EB86AD9821E9C51C005028C7 /* ZIMSocketManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSocketManagerProtocol.h; sourceTree = "<group>"; };
+		EB86AD9921E9C51C005028C7 /* ZIMLoginManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMLoginManagerProtocol.h; sourceTree = "<group>"; };
+		EB86AD9C21E9C870005028C7 /* ZIMSDKHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSDKHeader.h; sourceTree = "<group>"; };
+		EB86AD9D21E9C870005028C7 /* ZIMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIMSDK.h; sourceTree = "<group>"; };
+		EB86AD9E21E9C870005028C7 /* ZIMSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIMSDK.m; sourceTree = "<group>"; };
 		EBB799FC21DF2C7900EBCB99 /* HiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB799FF21DF2C7900EBCB99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBB79A0021DF2C7900EBCB99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +90,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EB09B1BA21E997CE001F4064 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB86AD9221E9C51C005028C7 /* Manager */,
+				EB09B1BB21E997EA001F4064 /* Sections */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EB09B1BB21E997EA001F4064 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				EB09B1BC21E997EA001F4064 /* Login */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		EB09B1BC21E997EA001F4064 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EB09B1BD21E99809001F4064 /* ZIMLoginViewController.h */,
+				EB09B1BE21E99809001F4064 /* ZIMLoginViewController.m */,
+				EB09B1BF21E99809001F4064 /* ZIMLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EB86AD9221E9C51C005028C7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EB86AD9521E9C51C005028C7 /* ZIMSocketManager.h */,
+				EB86AD9321E9C51C005028C7 /* ZIMSocketManager.m */,
+				EB86AD9421E9C51C005028C7 /* ZIMLoginManager.h */,
+				EB86AD9621E9C51C005028C7 /* ZIMLoginManager.m */,
+				EB86AD9721E9C51C005028C7 /* Protocols */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EB86AD9721E9C51C005028C7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB86AD9821E9C51C005028C7 /* ZIMSocketManagerProtocol.h */,
+				EB86AD9921E9C51C005028C7 /* ZIMLoginManagerProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EBB799F321DF2C7900EBCB99 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +159,10 @@
 		EBB799FE21DF2C7900EBCB99 /* HiChat */ = {
 			isa = PBXGroup;
 			children = (
+				EB86AD9D21E9C870005028C7 /* ZIMSDK.h */,
+				EB86AD9E21E9C870005028C7 /* ZIMSDK.m */,
+				EB86AD9C21E9C870005028C7 /* ZIMSDKHeader.h */,
+				EB09B1BA21E997CE001F4064 /* Classes */,
 				EBB799FF21DF2C7900EBCB99 /* AppDelegate.h */,
 				EBB79A0021DF2C7900EBCB99 /* AppDelegate.m */,
 				EBB79A0221DF2C7900EBCB99 /* ViewController.h */,
@@ -173,6 +242,7 @@
 				EBB79A0C21DF2C7C00EBCB99 /* LaunchScreen.storyboard in Resources */,
 				EBB79A0921DF2C7C00EBCB99 /* Assets.xcassets in Resources */,
 				EBB79A0721DF2C7900EBCB99 /* Main.storyboard in Resources */,
+				EB09B1C121E99809001F4064 /* ZIMLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +304,12 @@
 			files = (
 				EBB79A0421DF2C7900EBCB99 /* ViewController.m in Sources */,
 				EBB79A0F21DF2C7C00EBCB99 /* main.m in Sources */,
+				EB86AD9B21E9C51C005028C7 /* ZIMLoginManager.m in Sources */,
 				EB18E21A21E3851400196039 /* HiChatSwiftTest.swift in Sources */,
+				EB86AD9A21E9C51C005028C7 /* ZIMSocketManager.m in Sources */,
+				EB86AD9F21E9C871005028C7 /* ZIMSDK.m in Sources */,
 				EBB79A0121DF2C7900EBCB99 /* AppDelegate.m in Sources */,
+				EB09B1C021E99809001F4064 /* ZIMLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +372,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -312,6 +387,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../HiChatKit/HiChatKit/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -358,6 +437,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -366,6 +446,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../HiChatKit/HiChatKit/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -383,12 +467,24 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AMap2DMap-NO-IDFA\"",
+					"\"${PODS_ROOT}/AMapFoundation-NO-IDFA\"",
+					"\"${PODS_ROOT}/AMapLocation-NO-IDFA\"",
+					"\"${PODS_ROOT}/AMapSearch-NO-IDFA\"",
+					"\"${PODS_ROOT}/BQMM/BQMM\"",
+					"\"${PODS_ROOT}/YYKit/Vendor\"",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"$(SRCROOT)/../HiChatKit/HiChatKit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HiChat/HiChat-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../HiChatKit/HiChatKit",
+					"$(SRCROOT)/../HiChatKit/HiChatKit/**",
 				);
 				INFOPLIST_FILE = HiChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -396,6 +492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.vipapp.www.HiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -403,6 +500,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -414,12 +512,24 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HP8U3K66H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AMap2DMap-NO-IDFA\"",
+					"\"${PODS_ROOT}/AMapFoundation-NO-IDFA\"",
+					"\"${PODS_ROOT}/AMapLocation-NO-IDFA\"",
+					"\"${PODS_ROOT}/AMapSearch-NO-IDFA\"",
+					"\"${PODS_ROOT}/BQMM/BQMM\"",
+					"\"${PODS_ROOT}/YYKit/Vendor\"",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"$(SRCROOT)/../HiChatKit/HiChatKit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HiChat/HiChat-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../HiChatKit/HiChatKit",
+					"$(SRCROOT)/../HiChatKit/HiChatKit/**",
 				);
 				INFOPLIST_FILE = HiChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -433,6 +543,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "HiChat/HiChat-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
